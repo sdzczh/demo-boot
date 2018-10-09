@@ -80,6 +80,7 @@ public class LoginService extends AbstratService<AuthUser> {
 		return AppUtil.returnObj(result);
 	}
 
+
 	@ServiceLog("退出")
 	public AjaxResult logout(HttpServletResponse response, HttpServletRequest request) {
 		String sessionId = CookieUtil.get(Constant.SESSION_IDENTITY_KEY, request);
