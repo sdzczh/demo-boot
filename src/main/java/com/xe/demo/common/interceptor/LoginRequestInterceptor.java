@@ -37,7 +37,7 @@ public class LoginRequestInterceptor extends HandlerInterceptorAdapter {
 		//权限验证结果
 		boolean isOpera = true;
 		//登录信息验证结果
-		String loginResult = validateLogin(request, response);w
+		String loginResult = validateLogin(request, response);
 
 		String requestType = request.getHeader("X-Requested-With");
 		String accept = request.getHeader("Accept");
